@@ -61,14 +61,20 @@ class IndexController extends \yii\web\Controller
         return $this->render('index',['model'=>$model,'msg'=>$msg]); 
         
     }
+
+    public function actionLoginout()
+    {
+        Yii::$app->session->remove('rooter');
+        Yii::$app->session->remove('rootid');
+        Yii::$app->session->remove('authority');
+        $this->redirect(['index/index']);
+    }
     public function actionMain()
     {
     	$this->getView()->title = \Yii::t('app','Dashboard'); 
     	return $this->render('main'); 
     }
 
-    public function actionSidenav(){
-    	echo Yii::$app->session->get("authority");  
-    }
+    
 
 }

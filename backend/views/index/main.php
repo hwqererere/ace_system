@@ -42,13 +42,13 @@ $input_js=array(
 					<ul class="breadcrumb">
 						<li>
 							<i class="icon-home home-icon"></i>
-							<a href="#">Home</a>
+							<a href="">Home</a>
 
 							<span class="divider">
 								<i class="icon-angle-right arrow-icon"></i>
 							</span>
 						</li>
-						<li class="active">Dashboard</li>
+						<li class="active"><?=Yii::t('app','Dashboard')?></li>
 					</ul><!--.breadcrumb-->
 
 					<div class="nav-search" id="nav-search">

@@ -247,7 +247,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="index.php?r=index/loginout">
 										<i class="icon-off"></i>
 										Logout
 									</a>

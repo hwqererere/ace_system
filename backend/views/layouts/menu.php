@@ -27,6 +27,12 @@
 						<span class="btn btn-danger"></span>
 					</div>
 				</div><!--#sidebar-shortcuts-->
+<?php
+$authority=Yii::$app->session->get("authority");
+echo $authority;
+
+?>
+
 <ul class="nav nav-list" >
 					<li class="active">
 						<a href="index.html">
