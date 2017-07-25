@@ -223,7 +223,7 @@
 								<img class="nav-user-photo" src="avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Jason
+									<?=Yii::$app->session->get("rooter")?>
 								</span>
 
 								<i class="icon-caret-down"></i>

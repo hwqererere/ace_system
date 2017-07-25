@@ -35,7 +35,7 @@ class IndexController extends \yii\web\Controller
     public function actionIndex()
     {
     	$msg="";
-    	$this->getView()->title = \Yii::t('app','Login'); 
+    	$this->getView()->title = 'Login'; 
     	if(isset(Yii::$app->session['rooter']) && isset(Yii::$app->session['rootid']) && isset(Yii::$app->session['power'])){
             if(Yii::$app->session['rooter']!="" && Yii::$app->session['rootid']!="" && Yii::$app->session['power']!=""){
                 $this->redirect(['index/main']);
@@ -71,7 +71,7 @@ class IndexController extends \yii\web\Controller
     }
     public function actionMain()
     {
-    	$this->getView()->title = \Yii::t('app','Dashboard'); 
+    	$this->getView()->title = 'Dashboard'; 
     	return $this->render('main'); 
     }
 

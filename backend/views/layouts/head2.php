@@ -7,7 +7,7 @@ use yii\helpers\Html;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="overview &amp; stats" />
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title><?= Html::encode(\Yii::t('app',$this->title)) ?></title>
     <!--basic styles-->
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
