@@ -38,8 +38,8 @@ $autharr=json_decode($authority);
 		if($autharr[$i]->fid=="0"){
 ?>
 		<li  <?php if($autharr[$i]->title==$this->title){echo 'class="active"';}?>>
-			<a href="<?=$autharr[$i]->link?>" >		
-				<i class="icon-pencil"></i>		
+			
+			<a href="<?=$autharr[$i]->link?>" >						
 				<span class="menu-text"><?=\Yii::t('app',$autharr[$i]->title)?></span>
 			</a>
 			<ul class="submenu">
@@ -49,7 +49,7 @@ $autharr=json_decode($authority);
 			?>
 				<li <?php if($autharr[$j]->title==$this->title){echo 'class="active"';}?>>
 					<a href="<?=$autharr[$j]->link?>">	
-						<i class="icon-pencil"></i>					
+									
 						<?=\Yii::t('app',$autharr[$j]->title)?>
 					</a>
 					<ul class="submenu">
@@ -59,7 +59,7 @@ $autharr=json_decode($authority);
 					?>
 						<li <?php if($autharr[$k]->title==$this->title){echo 'class="active"';}?>>
 							<a href="<?=$autharr[$k]->link?>">
-								<i class="icon-pencil"></i>
+								
 								<?=\Yii::t('app',$autharr[$k]->title)?>
 							</a>
 						</li>

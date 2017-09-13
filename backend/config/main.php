@@ -47,7 +47,11 @@ return [
             'username'=>'root',
             'password'=>'',
             'charset'=>'utf8',
-        ]
+        ],
+        'cache' => [ 
+            'class' => 'yii\caching\FileCache', 
+            'cachePath' => '@runtime/cache2', 
+        ], 
 
         /*
         'urlManager' => [

@@ -10,10 +10,10 @@ use yii\helpers\Html;
     <title><?= Html::encode(\Yii::t('app',$this->title)) ?></title>
     <!--basic styles-->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<?php
 		foreach ($input_css as $key => $value) {
-			echo '<link rel="stylesheet" href="css/'.$value.'" />';
+			echo "<link rel=\"stylesheet\" href=\"css/".$value."\" />\n";
 		}
 	?>
 

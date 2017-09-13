@@ -24,8 +24,7 @@ class ManagerController extends \yii\web\Controller
 	    for($i=0; $i <count($autharr) ; $i++){
 	    	if($autharr[$i]->title=="Manager"){
 	    		$key=1;
-	    	}
-	    	
+	    	}	    	
 	    }
 	    if($key==0){
 	    	$this->redirect(['index/main']);
@@ -34,7 +33,7 @@ class ManagerController extends \yii\web\Controller
     public function actionIndex()
     {
     	$auth=Auth::AuthCheck();
-
+    	$this->getView()->title = 'Manager';
     	$rooter = BackendRoot::find()->orderBy('id Desc')->all();
         return $this->render('index',['model'=>$rooter,'auth'=>$auth]);
     }
